@@ -1,6 +1,6 @@
 FROM redis
 
-RUN mkdir -p /data/conf \
+RUN mkdir -p /usr/local/etc/redis \
     && mkdir -p /data/log \
     && mkdir -p /data/redisdata \
     && mkdir -p /data/sentinel/26379 \
