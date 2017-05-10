@@ -6,12 +6,12 @@ RUN mkdir -p /usr/local/redis/conf \
     && mkdir -p /usr/local/redis/sentinel/26379 \
     && mkdir -p /usr/local/redis/sentinel/26479 \
     && mkdir -p /usr/local/redis/sentinel/26579 \
-    && wget -O /usr/local/redis/conf/redis6379.conf https://raw.githubusercontent.com/vancebs/fmp_env/1.0/redis6379.conf \
-    && wget -O /usr/local/redis/conf/redis6380.conf https://raw.githubusercontent.com/vancebs/fmp_env/1.0/redis6380.conf \
-    && wget -O /usr/local/redis/conf/redis6381.conf https://raw.githubusercontent.com/vancebs/fmp_env/1.0/redis6381.conf \
-    && wget -O /usr/local/redis/conf/sentinel26379.conf https://raw.githubusercontent.com/vancebs/fmp_env/1.0/sentinel26379.conf \
-    && wget -O /usr/local/redis/conf/sentinel26479.conf https://raw.githubusercontent.com/vancebs/fmp_env/1.0/sentinel26479.conf \
-    && wget -O /usr/local/redis/conf/sentinel26579.conf https://raw.githubusercontent.com/vancebs/fmp_env/1.0/sentinel26579.conf
+    && wget -O /usr/local/redis/conf/redis6379.conf https://raw.githubusercontent.com/vancebs/fmp_env/master/redis6379.conf \
+    && wget -O /usr/local/redis/conf/redis6380.conf https://raw.githubusercontent.com/vancebs/fmp_env/master/redis6380.conf \
+    && wget -O /usr/local/redis/conf/redis6381.conf https://raw.githubusercontent.com/vancebs/fmp_env/master/redis6381.conf \
+    && wget -O /usr/local/redis/conf/sentinel26379.conf https://raw.githubusercontent.com/vancebs/fmp_env/master/sentinel26379.conf \
+    && wget -O /usr/local/redis/conf/sentinel26479.conf https://raw.githubusercontent.com/vancebs/fmp_env/master/sentinel26479.conf \
+    && wget -O /usr/local/redis/conf/sentinel26579.conf https://raw.githubusercontent.com/vancebs/fmp_env/master/sentinel26579.conf
 
 EXPOSE 6379
 EXPOSE 6380
