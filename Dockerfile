@@ -13,6 +13,7 @@ RUN mkdir -p /usr/local/redis/conf \
     #&& wget -O /usr/local/redis/conf/sentinel26479.conf https://raw.githubusercontent.com/vancebs/fmp_env/master/sentinel26479.conf \
     #&& wget -O /usr/local/redis/conf/sentinel26579.conf https://raw.githubusercontent.com/vancebs/fmp_env/master/sentinel26579.conf
 
+
 EXPOSE 6379
 #EXPOSE 6380
 #EXPOSE 6381
