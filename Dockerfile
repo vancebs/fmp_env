@@ -21,9 +21,9 @@ EXPOSE 26379
 EXPOSE 26479
 EXPOSE 26579
 
-CMD [ "redis-server", "/usr/local/redis/conf/redis6379.conf" ]
-CMD [ "redis-server", "/usr/local/redis/conf/redis6380.conf" ]
-CMD [ "redis-server", "/usr/local/redis/conf/redis6381.conf" ]
-CMD [ "redis-sentinel", "/usr/local/redis/conf/sentinel26379.conf" ]
-CMD [ "redis-sentinel", "/usr/local/redis/conf/sentinel26479.conf" ]
-CMD [ "redis-sentinel", "/usr/local/redis/conf/sentinel26579.conf" ]
+CMD [ "/usr/local/bin/redis-server", "/usr/local/redis/conf/redis6379.conf" ]
+CMD [ "/usr/local/bin/redis-server", "/usr/local/redis/conf/redis6380.conf" ]
+CMD [ "/usr/local/bin/redis-server", "/usr/local/redis/conf/redis6381.conf" ]
+CMD [ "/usr/local/bin/redis-server", "/usr/local/redis/conf/sentinel26379.conf", "--sentinel" ]
+CMD [ "/usr/local/bin/redis-server", "/usr/local/redis/conf/sentinel26479.conf", "--sentinel" ]
+CMD [ "/usr/local/bin/redis-server", "/usr/local/redis/conf/sentinel26579.conf", "--sentinel" ]
